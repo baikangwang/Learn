@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFSample.Console.Basic.Service", "BasicSample\Service\WCFSample.Console.Basic.Service.csproj", "{58833FC2-BF14-47DD-B9F0-2F7BCED654D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFSample.Console.Basic.Service", "WCFSample.Console.Basic.Service\WCFSample.Console.Basic.Service.csproj", "{58833FC2-BF14-47DD-B9F0-2F7BCED654D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFSample.Contract", "BasicSample\Contract\WCFSample.Contract.csproj", "{8F19FDD8-FBF9-45B7-A590-1CD11A5F1FFF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFSample.Contract", "WCFSample.Contract\WCFSample.Contract.csproj", "{8F19FDD8-FBF9-45B7-A590-1CD11A5F1FFF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFSample.Console.Basic.Client", "BasicSample\Client\WCFSample.Console.Basic.Client.csproj", "{C301611C-3868-48A0-BB7B-B8DF0421A133}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFSample.Console.Basic.Client", "WCFSample.Console.Basic.Client\WCFSample.Console.Basic.Client.csproj", "{C301611C-3868-48A0-BB7B-B8DF0421A133}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFSample.Console.Duplex.Service", "DuplexService\WCFSample.Console.Duplex.Service.csproj", "{49E6246B-FFF0-4619-A14C-7CF2C664ED57}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFSample.Console.Duplex.Service", "WCFSample.Console.Duplex.Service\WCFSample.Console.Duplex.Service.csproj", "{49E6246B-FFF0-4619-A14C-7CF2C664ED57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFSample.Console.Duplex.Client", "ClientDuplex\WCFSample.Console.Duplex.Client.csproj", "{51725B71-0AA8-4B64-BCC6-09CB2163D7CC}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFSample.Console.Duplex.Client", "WCFSample.Console.Duplex.Client\WCFSample.Console.Duplex.Client.csproj", "{51725B71-0AA8-4B64-BCC6-09CB2163D7CC}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFSample.IIS.Basic.Service", "WCFSample.IIS.Basic.Service\WCFSample.IIS.Basic.Service.csproj", "{FBBF64F7-3851-487C-AE1C-18F56DA86AE2}"
 EndProject
@@ -21,21 +21,21 @@ Global
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://baikangwang.visualstudio.com/defaultcollection
 		SccLocalPath0 = .
-		SccProjectUniqueName1 = BasicSample\\Client\\WCFSample.Console.Basic.Client.csproj
-		SccProjectName1 = BasicSample/Client
-		SccLocalPath1 = BasicSample\\Client
-		SccProjectUniqueName2 = BasicSample\\Service\\WCFSample.Console.Basic.Service.csproj
-		SccProjectName2 = BasicSample/Service
-		SccLocalPath2 = BasicSample\\Service
-		SccProjectUniqueName3 = BasicSample\\Contract\\WCFSample.Contract.csproj
-		SccProjectName3 = BasicSample/Contract
-		SccLocalPath3 = BasicSample\\Contract
-		SccProjectUniqueName4 = DuplexService\\WCFSample.Console.Duplex.Service.csproj
-		SccProjectName4 = DuplexService
-		SccLocalPath4 = DuplexService
-		SccProjectUniqueName5 = ClientDuplex\\WCFSample.Console.Duplex.Client.csproj
-		SccProjectName5 = ClientDuplex
-		SccLocalPath5 = ClientDuplex
+		SccProjectUniqueName1 = WCFSample.Console.Basic.Client\\WCFSample.Console.Basic.Client.csproj
+		SccProjectName1 = WCFSample.Console.Basic.Client
+		SccLocalPath1 = WCFSample.Console.Basic.Client
+		SccProjectUniqueName2 = WCFSample.Console.Basic.Service\\WCFSample.Console.Basic.Service.csproj
+		SccProjectName2 = WCFSample.Console.Basic.Service
+		SccLocalPath2 = WCFSample.Console.Basic.Service
+		SccProjectUniqueName3 = WCFSample.Contract\\WCFSample.Contract.csproj
+		SccProjectName3 = WCFSample.Contract
+		SccLocalPath3 = WCFSample.Contract
+		SccProjectUniqueName4 = WCFSample.Console.Duplex.Service\\WCFSample.Console.Duplex.Service.csproj
+		SccProjectName4 = WCFSample.Console.Duplex.Service
+		SccLocalPath4 = WCFSample.Console.Duplex.Service
+		SccProjectUniqueName5 = WCFSample.Console.Duplex.Client\\WCFSample.Console.Duplex.Client.csproj
+		SccProjectName5 = WCFSample.Console.Duplex.Client
+		SccLocalPath5 = WCFSample.Console.Duplex.Client
 		SccProjectUniqueName6 = WCFSample.IIS.Basic.Service\\WCFSample.IIS.Basic.Service.csproj
 		SccProjectName6 = WCFSample.IIS.Basic.Service
 		SccLocalPath6 = WCFSample.IIS.Basic.Service

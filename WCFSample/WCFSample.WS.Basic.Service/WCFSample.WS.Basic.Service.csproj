@@ -67,7 +67,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BasicSample\Contract\WCFSample.Contract.csproj">
+    <ProjectReference Include="..\WCFSample.Contract\WCFSample.Contract.csproj">
       <Project>{8f19fdd8-fbf9-45b7-a590-1cd11a5f1fff}</Project>
       <Name>WCFSample.Contract</Name>
     </ProjectReference>
