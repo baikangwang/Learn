@@ -74,10 +74,6 @@ namespace CG.TrayNotify.Wcf.Service
             }
         }
 
-        public void DoWork()
-        {
-        }
-
         public void Register(Guid instanceId)
         {
             ITrayNotifyCallback caller = OperationContext.Current.GetCallbackChannel<ITrayNotifyCallback>();

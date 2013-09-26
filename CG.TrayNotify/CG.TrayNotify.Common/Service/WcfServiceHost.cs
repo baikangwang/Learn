@@ -31,7 +31,7 @@
             serviceHost.Start( );
 
             Console.WriteLine( String.Format( "\n{0} WCF services have successfully started!\n\nPress ENTER to exit.", serviceAppName ) );
-            Console.Read(); //ReadKey( false );
+            Console.ReadKey(false);
         }
 
 		/// <summary>

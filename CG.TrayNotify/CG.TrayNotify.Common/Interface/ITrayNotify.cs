@@ -9,9 +9,6 @@ namespace CG.TrayNotify.Common.Interface
     public interface ITrayNotify
     {
         [OperationContract]
-        void DoWork();
-
-        [OperationContract]
         void Register(Guid instanceId);
 
         [OperationContract]
