@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.ServiceModel;
-using System.Text;
 
-namespace WCFSample.ClientDuplex
+namespace WCFSample.Console.Duplex.Client
 {
     class Program
     {
@@ -34,21 +31,21 @@ namespace WCFSample.ClientDuplex
 
                 client.Close();
 
-                Console.WriteLine("Done!");
+                System.Console.WriteLine("Done!");
 
-                Console.Read();
+                System.Console.Read();
             }
             catch (TimeoutException timeProblem)
             {
-                Console.WriteLine("The service operation timed out. " + timeProblem.Message);
+                System.Console.WriteLine("The service operation timed out. " + timeProblem.Message);
                 client.Abort();
-                Console.Read();
+                System.Console.Read();
             }
             catch (CommunicationException commProblem)
             {
-                Console.WriteLine("There was a communication problem. " + commProblem.Message);
+                System.Console.WriteLine("There was a communication problem. " + commProblem.Message);
                 client.Abort();
-                Console.Read();
+                System.Console.Read();
             }
 
 

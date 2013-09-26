@@ -7,8 +7,8 @@
     <ProjectGuid>{51725B71-0AA8-4B64-BCC6-09CB2163D7CC}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ClientDuplex</RootNamespace>
-    <AssemblyName>ClientDuplex</AssemblyName>
+    <RootNamespace>WCFSample.Console.Duplex.Client</RootNamespace>
+    <AssemblyName>WCFSample.Console.Duplex.Client</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>

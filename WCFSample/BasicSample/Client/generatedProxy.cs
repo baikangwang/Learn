@@ -8,77 +8,78 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-
-
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-[System.ServiceModel.ServiceContractAttribute(Namespace="WCFSample.Services", ConfigurationName="ICalculator")]
-public interface ICalculator
+namespace WCFSample.Console.Basic.Client
 {
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    [System.ServiceModel.ServiceContractAttribute(Namespace="WCFSample.Services", ConfigurationName="ICalculator")]
+    public interface ICalculator
+    {
     
-    [System.ServiceModel.OperationContractAttribute(Action="WCFSample.Services/ICalculator/Add", ReplyAction="WCFSample.Services/ICalculator/AddResponse")]
-    double Add(double d1, double d2);
+        [System.ServiceModel.OperationContractAttribute(Action="WCFSample.Services/ICalculator/Add", ReplyAction="WCFSample.Services/ICalculator/AddResponse")]
+        double Add(double d1, double d2);
     
-    [System.ServiceModel.OperationContractAttribute(Action="WCFSample.Services/ICalculator/Subtract", ReplyAction="WCFSample.Services/ICalculator/SubtractResponse")]
-    double Subtract(double d1, double d2);
+        [System.ServiceModel.OperationContractAttribute(Action="WCFSample.Services/ICalculator/Subtract", ReplyAction="WCFSample.Services/ICalculator/SubtractResponse")]
+        double Subtract(double d1, double d2);
     
-    [System.ServiceModel.OperationContractAttribute(Action="WCFSample.Services/ICalculator/Multiply", ReplyAction="WCFSample.Services/ICalculator/MultiplyResponse")]
-    double Multiply(double d1, double d2);
+        [System.ServiceModel.OperationContractAttribute(Action="WCFSample.Services/ICalculator/Multiply", ReplyAction="WCFSample.Services/ICalculator/MultiplyResponse")]
+        double Multiply(double d1, double d2);
     
-    [System.ServiceModel.OperationContractAttribute(Action="WCFSample.Services/ICalculator/Divide", ReplyAction="WCFSample.Services/ICalculator/DivideResponse")]
-    double Divide(double d1, double d2);
-}
+        [System.ServiceModel.OperationContractAttribute(Action="WCFSample.Services/ICalculator/Divide", ReplyAction="WCFSample.Services/ICalculator/DivideResponse")]
+        double Divide(double d1, double d2);
+    }
 
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-public interface ICalculatorChannel : ICalculator, System.ServiceModel.IClientChannel
-{
-}
-
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
-public partial class CalculatorClient : System.ServiceModel.ClientBase<ICalculator>, ICalculator
-{
-    
-    public CalculatorClient()
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public interface ICalculatorChannel : ICalculator, System.ServiceModel.IClientChannel
     {
     }
+
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
+    public partial class CalculatorClient : System.ServiceModel.ClientBase<ICalculator>, ICalculator
+    {
     
-    public CalculatorClient(string endpointConfigurationName) : 
+        public CalculatorClient()
+        {
+        }
+    
+        public CalculatorClient(string endpointConfigurationName) : 
             base(endpointConfigurationName)
-    {
-    }
+        {
+        }
     
-    public CalculatorClient(string endpointConfigurationName, string remoteAddress) : 
+        public CalculatorClient(string endpointConfigurationName, string remoteAddress) : 
             base(endpointConfigurationName, remoteAddress)
-    {
-    }
+        {
+        }
     
-    public CalculatorClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public CalculatorClient(string endpointConfigurationName, System.ServiceModel.EndpointAddress remoteAddress) : 
             base(endpointConfigurationName, remoteAddress)
-    {
-    }
+        {
+        }
     
-    public CalculatorClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+        public CalculatorClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
             base(binding, remoteAddress)
-    {
-    }
+        {
+        }
     
-    public double Add(double d1, double d2)
-    {
-        return base.Channel.Add(d1, d2);
-    }
+        public double Add(double d1, double d2)
+        {
+            return base.Channel.Add(d1, d2);
+        }
     
-    public double Subtract(double d1, double d2)
-    {
-        return base.Channel.Subtract(d1, d2);
-    }
+        public double Subtract(double d1, double d2)
+        {
+            return base.Channel.Subtract(d1, d2);
+        }
     
-    public double Multiply(double d1, double d2)
-    {
-        return base.Channel.Multiply(d1, d2);
-    }
+        public double Multiply(double d1, double d2)
+        {
+            return base.Channel.Multiply(d1, d2);
+        }
     
-    public double Divide(double d1, double d2)
-    {
-        return base.Channel.Divide(d1, d2);
+        public double Divide(double d1, double d2)
+        {
+            return base.Channel.Divide(d1, d2);
+        }
     }
 }

@@ -2,7 +2,7 @@
 using System.ServiceModel;
 using WCFSample.Contract;
 
-namespace WCFSample.DuplexService
+namespace WCFSample.Console.Duplex.Service
 {
     [ServiceBehavior(InstanceContextMode = InstanceContextMode.PerSession)]
     public class CalculatorDuplexService:ICalculatorDuplex

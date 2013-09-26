@@ -1,11 +1,10 @@
 ﻿using System;
 using System.ServiceModel;
 using WCFSample.Contract;
+using System.ServiceModel.Description;
 
-namespace WCFSample.DuplexService
+namespace WCFSample.Console.Duplex.Service
 {
-    using System.ServiceModel.Description;
-
     class Program
     {
         static void Main(string[] args)
@@ -18,17 +17,17 @@ namespace WCFSample.DuplexService
                 ServiceMetadataBehavior smb=new ServiceMetadataBehavior {HttpGetEnabled = true};
                 selfHost.Description.Behaviors.Add(smb);
                 selfHost.Open();
-                Console.WriteLine("The service is ready.");
-                Console.WriteLine("Press <ENTER> to terminate service.");
-                Console.WriteLine();
-                Console.ReadLine();
+                System.Console.WriteLine("The service is ready.");
+                System.Console.WriteLine("Press <ENTER> to terminate service.");
+                System.Console.WriteLine();
+                System.Console.ReadLine();
 
                 // Close the ServiceHostBase to shutdown the service.
                 selfHost.Close();
             }
             catch (CommunicationException ex)
             {
-                Console.WriteLine("An exception occurred: {0}", ex.Message);
+                System.Console.WriteLine("An exception occurred: {0}", ex.Message);
                 selfHost.Abort();
             }
         }

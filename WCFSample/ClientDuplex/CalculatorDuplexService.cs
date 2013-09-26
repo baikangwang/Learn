@@ -9,7 +9,7 @@
 //------------------------------------------------------------------------------
 
 
-namespace WCFSample.ClientDuplex
+namespace WCFSample.Console.Duplex.Client
 {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "3.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace = "http://Microsoft.ServiceModel.Samples", ConfigurationName = "ICalculatorDuplex", CallbackContract = typeof(ICalculatorDuplexCallback), SessionMode = System.ServiceModel.SessionMode.Required)]

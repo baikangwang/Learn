@@ -1,7 +1,7 @@
-﻿namespace WCFSample.Contract
-{
-    using System.ServiceModel;
+﻿using System.ServiceModel;
 
+namespace WCFSample.Contract
+{
     [ServiceContract(Namespace = "WCFSample.Services")]
     public interface ICalculator
     {
