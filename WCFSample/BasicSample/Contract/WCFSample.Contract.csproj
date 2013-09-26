@@ -41,6 +41,7 @@
     <Reference Include="System.ServiceModel" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CalculatorBase.cs" />
     <Compile Include="ICalculatorDuplex.cs" />
     <Compile Include="ICalculatorDuplexCallback.cs" />
     <Compile Include="ICalculator.cs" />
