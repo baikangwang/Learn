@@ -7,9 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CG.TrayNotify.Common", "CG.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CG.TrayNotify.Wcf.Service", "CG.TrayNotify.Wcf.Service\CG.TrayNotify.Wcf.Service.csproj", "{34350B98-EDF0-43C5-9683-B974AE6DBDCA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orange.TrayNotify.Console.Client", "Orange.TrayNotify.Console.Client\Orange.TrayNotify.Console.Client.csproj", "{84195D0A-349C-409B-BB76-C0CCAAD8B286}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WCFSample.Console.Duplex.Client", "..\WCFSample\WCFSample.Console.Duplex.Client\WCFSample.Console.Duplex.Client.csproj", "{51725B71-0AA8-4B64-BCC6-09CB2163D7CC}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 4
+		SccNumberOfProjects = 6
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://baikangwang.visualstudio.com/defaultcollection
 		SccLocalPath0 = .
@@ -22,6 +26,12 @@ Global
 		SccProjectUniqueName3 = CG.TrayNotify.Wcf.Service\\CG.TrayNotify.Wcf.Service.csproj
 		SccProjectName3 = CG.TrayNotify.Wcf.Service
 		SccLocalPath3 = CG.TrayNotify.Wcf.Service
+		SccProjectUniqueName4 = Orange.TrayNotify.Console.Client\\Orange.TrayNotify.Console.Client.csproj
+		SccProjectName4 = Orange.TrayNotify.Console.Client
+		SccLocalPath4 = Orange.TrayNotify.Console.Client
+		SccProjectUniqueName5 = ..\\WCFSample\\WCFSample.Console.Duplex.Client\\WCFSample.Console.Duplex.Client.csproj
+		SccProjectName5 = ../WCFSample/WCFSample.Console.Duplex.Client
+		SccLocalPath5 = ..\\WCFSample\\WCFSample.Console.Duplex.Client
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -64,6 +74,26 @@ Global
 		{34350B98-EDF0-43C5-9683-B974AE6DBDCA}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{34350B98-EDF0-43C5-9683-B974AE6DBDCA}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{34350B98-EDF0-43C5-9683-B974AE6DBDCA}.Release|x86.ActiveCfg = Release|Any CPU
+		{84195D0A-349C-409B-BB76-C0CCAAD8B286}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84195D0A-349C-409B-BB76-C0CCAAD8B286}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84195D0A-349C-409B-BB76-C0CCAAD8B286}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{84195D0A-349C-409B-BB76-C0CCAAD8B286}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{84195D0A-349C-409B-BB76-C0CCAAD8B286}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{84195D0A-349C-409B-BB76-C0CCAAD8B286}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84195D0A-349C-409B-BB76-C0CCAAD8B286}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84195D0A-349C-409B-BB76-C0CCAAD8B286}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{84195D0A-349C-409B-BB76-C0CCAAD8B286}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{84195D0A-349C-409B-BB76-C0CCAAD8B286}.Release|x86.ActiveCfg = Release|Any CPU
+		{51725B71-0AA8-4B64-BCC6-09CB2163D7CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51725B71-0AA8-4B64-BCC6-09CB2163D7CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51725B71-0AA8-4B64-BCC6-09CB2163D7CC}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{51725B71-0AA8-4B64-BCC6-09CB2163D7CC}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{51725B71-0AA8-4B64-BCC6-09CB2163D7CC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{51725B71-0AA8-4B64-BCC6-09CB2163D7CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51725B71-0AA8-4B64-BCC6-09CB2163D7CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51725B71-0AA8-4B64-BCC6-09CB2163D7CC}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{51725B71-0AA8-4B64-BCC6-09CB2163D7CC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{51725B71-0AA8-4B64-BCC6-09CB2163D7CC}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

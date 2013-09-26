@@ -33,6 +33,7 @@
             // 
             // TrayNotifyHostServiceAccount
             // 
+            this.TrayNotifyHostServiceAccount.Account = System.ServiceProcess.ServiceAccount.LocalSystem;
             this.TrayNotifyHostServiceAccount.Password = null;
             this.TrayNotifyHostServiceAccount.Username = null;
             // 
