@@ -85,16 +85,17 @@ namespace Teacher
 
             if (response.StatusCode == HttpStatusCode.OK)
             {
-                int current = 1;
+                long total = response.ContentLength;
+                int current = 0;
                 content = new byte[1024];
                 StringBuilder sb = new StringBuilder();
                 using (Stream rs = response.GetResponseStream())
                 {
                     if (rs != null)
                     {
-                        while (current > 0)
+                        while (total>current)
                         {
-                            current = rs.Read(content, 0, content.Length);
+                            current += rs.Read(content, 0, content.Length);
                             sb.Append(Encoding.UTF8.GetString(content, 0, content.Length));
                         }
                         rs.Flush();
