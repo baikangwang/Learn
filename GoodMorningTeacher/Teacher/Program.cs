@@ -67,7 +67,7 @@ namespace Teacher
             {
                 book.UpdateTime(20);
                 Console.WriteLine("Waiting for 20 minis...");
-                Thread.Sleep(1000 * 60 * 20);
+                Thread.Sleep(1000 * 60 * 22);
             }
             Console.WriteLine("Completed!");
             Console.WriteLine("Press any key to exit...");
