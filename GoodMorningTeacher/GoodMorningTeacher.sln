@@ -3,15 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teacher", "Teacher\Teacher.csproj", "{AA78670D-495E-4804-8BE1-EEF94047713D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teacher.Test", "Teacher.Test\Teacher.Test.csproj", "{37AC2DB9-51B3-4BF2-A55A-2B2EF74DBA15}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 2
+		SccNumberOfProjects = 3
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://baikangwang.visualstudio.com/defaultcollection
 		SccLocalPath0 = .
 		SccProjectUniqueName1 = Teacher\\Teacher.csproj
 		SccProjectName1 = Teacher
 		SccLocalPath1 = Teacher
+		SccProjectUniqueName2 = Teacher.Test\\Teacher.Test.csproj
+		SccProjectName2 = Teacher.Test
+		SccLocalPath2 = Teacher.Test
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -22,6 +27,10 @@ Global
 		{AA78670D-495E-4804-8BE1-EEF94047713D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA78670D-495E-4804-8BE1-EEF94047713D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA78670D-495E-4804-8BE1-EEF94047713D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37AC2DB9-51B3-4BF2-A55A-2B2EF74DBA15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37AC2DB9-51B3-4BF2-A55A-2B2EF74DBA15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37AC2DB9-51B3-4BF2-A55A-2B2EF74DBA15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37AC2DB9-51B3-4BF2-A55A-2B2EF74DBA15}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
