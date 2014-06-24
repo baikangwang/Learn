@@ -1,9 +1,50 @@
 <?xml version="1.0"?>
 <configuration>
-    <startup> 
-        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/>
-    </startup>
-<appSettings>
+  <startup>
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.0"/>
+  </startup>
+  <appSettings>
+    <add key="BookId" value="32"/>
+    <add key="StudyPlanBookId" value="69"/>
+    <add key="UserId" value="69973"/>
+    <add key="Name" value="教师心理健康与压力管理"/>
+    <add key="TimeNeed" value="81"/>
+    <add key="EventViewState" value="%2FwEPDwUKMTAyNDY3NTkwNg8WBB4Fc3RhcnQFEjIwMTQtNi0yNCAxNjo0NDo1Nx4GQm9va0lEBQIzMhYCAgMPZBYCAg0PDxYCHgRUZXh0BQEwZGRkFChLVzncorbAjzt7iLjU3vVncUE%3D"/>
+    <add key="EventValidation" value="%2FwEWBQKFuv4aArPx3LwFAq746esOAoTqtZgDApH0lhr8XZzAtDXnBFKq%2Fwh%2BCLwqR8ftKg%3D%3D"/>
+    <!--
+  Web
+  ViewState /wEPDwUKMTAyNDY3NTkwNg8WBB4Fc3RhcnQFEjIwMTQtNi0yNCAyMDowNDo0MR4GQm9va0lEBQIzMhYCAgMPZBYCAg0PDxYCHgRUZXh0BQIxNmRkZKy2mnBvCpiOPP52mVGR0VDpJodm
+  Validation /wEWBQKa2feLBwKz8dy8BQKu+OnrDgKE6rWYAwKR9JYaGNdwDsQhYtNRRgFqTWX+2nYa1G0=
+  -->
+
+    <!--
+  <add key="BookId" value="5"/>
+  <add key="StudyPlanBookId" value="65"/>
+  <add key="UserId" value="69973"/>
+  <add key="Name" value="《小学教师专业标准（试行）》解读"/>
+  <add key="TimeNeed" value="83"/>
+  <add key="EventViewState" value="%2FwEPDwUKMTAyNDY3NTkwNg8WBB4Fc3RhcnQFEjIwMTQtNi0yNCAxMzo0NzoxNB4GQm9va0lEBQE1FgICAw9kFgICDQ8PFgIeBFRleHQFAjMzZGRkt9CRhOOEsSG9U9dp9gEPlymufxc%3D"/>
+  <add key="EventValidation" value="%2FwEWBQLztsKmDQKz8dy8BQKu%2BOnrDgKE6rWYAwKR9JYaA9kXKqFTeemHJ7DtK5aEkvuy%2BX0%3D"/>
+  -->
+    <!--
+  <add key="BookId" value="49"/>
+  <add key="StudyPlanBookId" value="28"/>
+  <add key="UserId" value="69583"/>
+  <add key="Name" value="师德情怀与教育责任"/>
+  <add key="TimeNeed" value="162"/>
+  <add key="EventViewState" value="%2FwEPDwUKMTAyNDY3NTkwNg8WBB4Fc3RhcnQFEjIwMTQtNi0xMyAxNTozODozNx4GQm9va0lEBQI0ORYCAgMPZBYCAg0PDxYCHgRUZXh0BQEwZGRkjmMDFKHBAvbOkWUvSE1Bndz7oxU%3D"/>
+  <add key="EventValidation" value="%2FwEWBQKx2tZQArPx3LwFAq746esOAoTqtZgDApH0lhoit1wq%2FkX6LoccIIsjMnJ%2BTXCfrA%3D%3D"/>
+  -->
+    <!--
+  <add key="BookId" value="47"/>
+  <add key="StudyPlanBookId" value="27"/>
+  <add key="UserId" value="69583"/>
+  <add key="Name" value="如何进行教学设计，正确引导学生自主学习"/>
+  <add key="TimeNeed" value="35"/>
+  <add key="EventViewState" value="%2FwEPDwUKMTAyNDY3NTkwNg8WBB4Fc3RhcnQFEjIwMTQtNi0xMyAxMDo0Nzo1OB4GQm9va0lEBQI0NxYCAgMPZBYCAg0PDxYCHgRUZXh0BQEwZGRkDIHc4VQxokLenyWX3z4Pf4WWVHY%3D"/>
+  <add key="EventValidation" value="%2FwEWBQKfiuvzBwKz8dy8BQKu%2BOnrDgKE6rWYAwKR9JYa1tbBrso%2BXQL%2F9slJK3fAewUNsdM%3D"/>
+  -->
+    <!--
   <add key="BookId" value="35"/>
   <add key="StudyPlanBookId" value="22"/>
   <add key="UserId" value="69583"/>
@@ -11,7 +52,8 @@
   <add key="TimeNeed" value="132"/>
   <add key="EventViewState" value="%2FwEPDwUKMTAyNDY3NTkwNg8WBB4Fc3RhcnQFEjIwMTQtNi0xMiAyMToxMjo1Mh4GQm9va0lEBQIzNRYCAgMPZBYCAg0PDxYCHgRUZXh0BQIyOGRkZFBX1I%2BJAmiHDXbdnQwQZ%2FLCC9aG"/>
   <add key="EventValidation" value="%2FwEWBQKOsJP4AQKz8dy8BQKu%2BOnrDgKE6rWYAwKR9JYal8EFMC3%2FDso2r5399QOc38lCAyM%3D"/>
-  <!--
+  -->
+    <!--
   <add key="BookId" value="29"/>
   <add key="StudyPlanBookId" value="21"/>
   <add key="UserId" value="69583"/>
@@ -20,5 +62,5 @@
   <add key="EventViewState" value="%2FwEPDwUKMTAyNDY3NTkwNg8WBB4Fc3RhcnQFEjIwMTQtNi0xMiAxMjowMDowMh4GQm9va0lEBQIyORYCAgMPZBYCAg0PDxYCHgRUZXh0BQEwZGRklySbmxcKwi5TZc0xsYKHw27CuP4%3D"/>
   <add key="EventValidation" value="%2FwEWBQKrudu7CAKz8dy8BQKu%2BOnrDgKE6rWYAwKR9JYa0CqP3iCl6ZiMWVdMl2TQLRa1imc%3D"/>
   -->
-</appSettings>
+  </appSettings>
 </configuration>
