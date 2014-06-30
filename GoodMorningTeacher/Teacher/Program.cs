@@ -66,8 +66,21 @@ namespace Teacher
             while (!book.IsCompleted)
             {
                 book.UpdateTime(20);
+                if (book.IsCompleted)
+                {
+                    break;
+                }
                 Console.WriteLine("Waiting for 20 minis...");
-                Thread.Sleep(1000 * 60 * 22);
+                int interval = 20 * 60;
+                long unit = 10000000;
+                for (int i = 1; i <= interval; i++)
+                {
+                    TimeSpan t = new TimeSpan((long)i * unit);
+                    Thread.Sleep(1000);
+                    Console.CursorLeft = 0;
+                    Console.Write(t.ToString("hh\\:mm\\:ss"));
+                }
+                Console.WriteLine();
             }
             Console.WriteLine("Completed!");
             Console.WriteLine("Press any key to exit...");

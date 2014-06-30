@@ -22,6 +22,8 @@ namespace Teacher
         private string _viewState;
         private string _validation;
 
+        private bool _inRetry;
+
         public bool IsCompleted { get { return _needtime <= 0; } }
         
         public FixedBook(string name, int bookId, int studyPlanBookId, string viewstate, string validation, int needtime,
@@ -34,12 +36,12 @@ namespace Teacher
             this._needtime = needtime;
             this._viewState = viewstate;
             this._validation = validation;
+            this._inRetry = false;
         }
 
-        public void UpdateTime(int minites)
+        public bool UpdateTime(int minites)
         {
-            if (this._needtime <= 0)
-                return;
+            if (this._needtime <= 0) return false;
 
             string viewState = this._viewState;
             string eventValidation = this._validation;
@@ -104,13 +106,13 @@ namespace Teacher
                     {
                         Console.WriteLine("{1}: {0} -> Failed, Cannot get response stream.", this.Name,
                                           DateTime.Now.ToShortTimeString());
-                        return;
+                        return false;
                     }
                 }
 
                 form = sb.ToString();
 
-                string pattern1 = "(alert\\(\\'你最后一次更新时间是.*?目前系统时间为.*?时间还不够20分钟，所以这次更新时间操作无效。\\'\\));|(alert\\(\\'计时出错，重新计时！\\'\\);)";
+                string pattern1 = "(?<msg>(alert\\(\\'你最后一次更新时间是.*?目前系统时间为.*?时间还不够20分钟，所以这次更新时间操作无效。\\'\\);)|(alert\\(\\'计时出错，重新计时！\\'\\);))";
                 Regex r = new Regex(pattern1, RegexOptions.Compiled);
                 Match m = r.Match(form);
                 if (!m.Success)
@@ -132,17 +134,61 @@ namespace Teacher
                     {
                         Console.WriteLine("{2}: {0} -> Updated {1}, Completed!", this.Name, minites, DateTime.Now.ToShortTimeString());
                     }
+
+                    return true;
                 }
                 else
                 {
-                    Console.WriteLine("{1}: {0} -> Failed, {2}", this.Name, DateTime.Now.ToShortTimeString(),
-                                      "< 20 mins or timer error");
+                    string message = m.Groups["msg"].Value;
+
+                    message = Regex.Replace(
+                        message, "(alert\\(')|('\\);)", string.Empty, RegexOptions.Compiled | RegexOptions.Singleline);
+                    Console.WriteLine("{1}: {0} -> Failed, {2}", this.Name, DateTime.Now.ToShortTimeString(), message);
+
+                    if (!this._inRetry)
+                    {
+                        return this.Retry(minites);
+                    }
+                    else
+                    {
+                        return false;
+                    }
                 }
             }
             else
             {
                 Console.WriteLine("{1}: {0} -> Failed, {2}", this.Name, DateTime.Now.ToShortTimeString(), response.StatusDescription);
+
+                if (!this._inRetry)
+                {
+                    return this.Retry(minites);
+                }
+                else
+                {
+                    return false;
+                }
             }
+        }
+
+        private bool Retry(int minites)
+        {
+            this._inRetry = true;
+            int times = 3;
+
+            for (int i = 0; i < times; i++)
+            {
+                Console.WriteLine(string.Format("Try {0}...", i + 1));
+                bool result = UpdateTime(minites);
+                if (result)
+                {
+                    this._inRetry = false;
+                    return true;
+                }
+            }
+
+            //if success, must not go here
+            this._inRetry = false;
+            return false;
         }
     }
 }
